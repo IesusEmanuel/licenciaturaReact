@@ -1,0 +1,124 @@
+@media screen and (max-width: 1081px) {
+  html, body {
+    font-size: 13px;
+    overflow-x: hidden;
+    width: 100%;
+  }.nav-container {
+    width: 65%;
+    height: 100%;
+    background: var(--color-black);
+    z-index: 900;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    animation: fade 0.5s forwards;
+    .btn-transparent {
+      margin-top: 5rem;
+    }
+  }
+  @keyframes fade {
+      0% { opacity: 0; }
+      50% { opacity: 0.5; transform: scale(1.1); }
+      100% { opacity: 1; transform: scale(1); }
+  }
+  .nav {
+    flex-direction: column;
+    gap: 3.6rem;
+  }.uil-draggabledots, .uil-times {
+    top: 2.2rem;
+    right: 2.3rem;
+    z-index: 889;
+  }.uil {
+    font-size: 2.2rem;
+  }.image-container-logo {
+    width: 180px;
+    height: 104px;
+    aspect-ratio: 1/1;
+    img {
+      width: 66%;
+      height: auto;
+    }
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+  }.welcome > h1 {
+    font-size: 3.53rem;
+    text-align: left;
+    width: 100%;
+  }.welcome-photo-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }.btn-visit-feira {
+    width: 15rem;
+  }.faq.open p {
+    padding-left: -1rem;
+  }.footer {
+    padding: 3rem 1.4rem;
+    padding-bottom: 4rem;
+  }.map-btn {
+    font-size: .8rem;
+  }
+  form {
+    gap: 3rem;
+  }
+  input {
+    width: 96%;
+    font-size: .7rem;
+  }.teachers-container-1 h1 {
+    margin-bottom: 2rem;
+  }.teachers-container-1, .teachers-container-2 {
+    margin: 3rem 0;
+  }
+  iframe {
+    width: 320px;
+    height: 210px;
+    margin: 0 auto;
+  }
+  textarea {
+  width: 96%;
+  height: 3.6rem;
+  font-size: .7rem;
+  }.contact-container input, .contact-container textarea {
+    width: 90%;
+    font-size: .8rem;
+    margin: 0 auto;
+  }.contact-container textarea {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 1081px) {
+  .sectionx-second {
+    padding: 0 3rem;
+  }
+  ::-webkit-scrollbar {
+      width: 4px;
+      height: 9px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: var(--color-1); 
+  }
+  ::-webkit-scrollbar {
+      background-color: #c0c0c0; 
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1080px) {
+  .nav-container {
+    width: 45%;
+  }
+}
