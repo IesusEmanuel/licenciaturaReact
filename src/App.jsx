@@ -5,16 +5,6 @@ import Footer from "/src/components/Footer/footer.jsx";
 // import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 export default function App() {
-  const nav = document.querySelector('.nav-container');
-
-  const showNav = () => {
-    nav.style.display="flex";
-  }
-
-  const hideNav = () => {
-    nav.style.display="none";
-  }
-
     const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
     const showOverlay = () => {
@@ -33,11 +23,11 @@ export default function App() {
           <img src="/src/assets/Logo.png" class="logo"></img>
         </div>
 
-        <i onClick={ showNav } class="mobile pointer transition absolute white uil uil-draggabledots"></i>
+        <i class="mobile pointer transition absolute white uil uil-draggabledots"></i>
         <div id="navbar" class="flex-row align-container-center nav-container">
           <nav>
             <ul class="nav flex-row align-container-center">
-              <i onClick={ hideNav } class="mobile pointer transition absolute white uil uil-times"></i>
+              <i class="mobile pointer transition absolute white uil uil-times"></i>
               <li><a href="" class="uppercase nav-item lato-regular white transision">início</a></li>
               <li><a href="second-screen.html" class="uppercase nav-item lato-regular white transision">sobre</a></li>
               <li><a href="second-screen.html#egressos" class="uppercase nav-item lato-regular white transision">egressos</a></li>
@@ -76,14 +66,9 @@ export default function App() {
       <section class="faqs">
         <div class="container flex-column align-container-center faqs_container">
           <article class="faq">
-            <div class="faq_icon"><i class="color-1 uil uil-plus"></i></div>
             <div class="question_answer">
               <h4 class="mont-800 white uppercase">Feira de Matemática</h4>
               <button class="not-allowed pointer btn-visit-feira white transition mont-800 uppercase">Visitar</button>
-              <p class="white mont-400">Uma feira de matemática é um evento educacional em que os estudantes têm a oportunidade de apresentar projetos, experimentos, jogos ou outras atividades relacionadas à matemática. Esses eventos geralmente ocorrem em escolas, universidades ou centros comunitários e são projetados para promover o interesse e o aprendizado da matemática de uma forma interativa e divertida.
-      A Feira tem como finalidade incentivar, divulgar, e socializar as experiências, pesquisas e atividades matemáticas, bem como confirmar que as “Feiras de Matemática” se constituem numa experiência curricular ou extracurricular de relevância, para sistematizar e implementar os Projetos e/ou Programas de Educação Científica dos Alunos e Professores, contribuindo para a inovação curricular, durante o ano letivo, nas instituições envolvidas.
-
-              Participe!</p>
             </div>
           </article>
         </div>
