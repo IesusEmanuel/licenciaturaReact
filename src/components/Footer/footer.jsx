@@ -8,7 +8,7 @@ const Footer = () => {
         <img src="/src/assets/Logo.png" class="footer-logo"></img>
       </div>
       <span class="white mont-700">
-        2024, Licenciatura em Matemática, SJE
+        2025, Licenciatura em Matemática, SJE
       </span>
 
       <aside class="info flex-column">
